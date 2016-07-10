@@ -1,0 +1,152 @@
+/* ----- General Styles ----- */
+body {
+  background-color: white;
+  color: black;
+  font-family: 'Sacramento',sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ----- Header ----- */
+header {
+  text-align: center;
+  width: 100%;
+}
+
+.title {
+  font-size: 4.5em;
+  text-transform: uppercase;
+  font-family: 'Rock Salt', sans-serif;
+  color: #61DFA2;
+}
+
+form {
+  text-align: center;
+}
+
+#search {
+  font-size: 16pt;
+  width: 460px;
+  margin-bottom: 40px;
+}
+
+#search:focus {
+  border: 1px solid #9F33FF;
+}
+
+
+/* ----- Main ----- */
+.gallery {
+  width: 980px;
+
+}
+
+.gallery li {
+  list-style: none;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 60px;
+  margin-bottom: 50px;
+}
+
+.gallery li img {
+  max-width: 197px;
+}
+
+ul.gallery {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+li:nth-child(4),
+li:nth-child(8),
+li:nth-child(12) {
+  margin-right: 0;
+}
+
+li:nth-child(9),
+li:nth-child(10),
+li:nth-child(11),
+li:nth-child(12) {
+  margin-bottom: 0;
+}
+/* ----- Footer ----- */
+footer {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+/* ----- Overlay----- */
+#overlay {
+    background: rgba(80,84,91,0.9);
+    z-index: 1;
+    width: 100%;
+    height: 120%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 100px;
+    display: none;
+}
+
+#overlay-image {
+    display: block;
+    margin: auto;
+    width: 600px;
+    border-radius: 4px;
+    position: relative;
+}
+
+#overlay p {
+    position: relative;
+    display: block;
+    color: #61DFA2;
+    width: 600px;
+    font-size: 2em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#prevArrow,
+#nextArrow {
+    display: block;
+    position: fixed;
+    top: 70px;
+    margin: 0;
+    width: 8%;
+}
+
+#prevArrow {
+    left: 10%;
+    top: 25%
+}
+
+#nextArrow {
+    right: 10%;
+    top: 25%;
+}
+
+#nextArrow img,
+#prevArrow img {
+    width: 100%;
+}
+
+#exit {
+    display: block;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;
+}
+
+#exit img {
+    height: 100%;
+    padding: -10px;
+}
